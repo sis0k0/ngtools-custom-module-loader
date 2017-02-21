@@ -1,0 +1,17 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { RandomComponent } from './random.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: RandomComponent,
+  },
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+  providers: []
+})
+export class RandomRoutingModule { }
